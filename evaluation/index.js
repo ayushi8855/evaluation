@@ -23,6 +23,12 @@ function logger(req,res,next){
 }
  function checkPermission(req,res,next){
      console.log("checkpermission")
+     if(req.permission==true){
+         permission="true"
+     }
+     else if(req.permission==true){
+         permission="true1"
+     }
      next()
  }
  app.listen(7000,()=>{
